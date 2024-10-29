@@ -7,8 +7,12 @@ import Homework_1.model.Stop;
 import Homework_1.model.Transport;
 import Homework_1.model.TransportMode.*;
 
-
+/** Система Городской транспорт.
+На Маршрут назначаются Автобус, Троллейбус или Трамвай.
+Транспортные средства должны двигаться с определенным для каждого Маршрута интервалом.
+При поломке на Маршрут должен выходить резервный транспорт или увеличиваться интервал движения. */
 public class AppRunner {
+
     public static void main(String[] args) {
 
         // создаем остановки
