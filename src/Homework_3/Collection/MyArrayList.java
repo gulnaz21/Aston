@@ -15,11 +15,6 @@ public class MyArrayList<T> {
         array = (T[]) new Object[capacity];
     }
 
-  /*  public MyArrayList(MyArrayList<T> list){
-        size = list.length;
-        array
-    }*/
-
     public boolean add(T val){
         if (length == capacity){
             increaseArray();
@@ -84,14 +79,6 @@ public class MyArrayList<T> {
         sb.append("]");
         return sb.toString();
     }
-
-    /*public void add(int index, T val){
-        if (length == capacity)
-            increaseArray();
-        for (int i = 0; i < index; i++){
-
-        }
-    }*/
 
     private void increaseArray(){
         int newCapacity = capacity * 3 / 2 + 1;
